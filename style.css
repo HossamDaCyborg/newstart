@@ -15,12 +15,13 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
+    perspective:650px ;
 }
 .card{
     height: 75%;
     width: 40%;
     border-radius: 15px;
-    box-shadow: 0px 8px 20px 1px rgb(45,45, 70);
+    box-shadow: 0px 6px 20px rgba(45,45, 70 ,0.4);
     background: white;
     display: flex;
     align-items: center;
@@ -39,20 +40,24 @@
     
     background: linear-gradient(to right, #ffc7e1 ,#e1c7ff) ;
     filter: saturate(200%);
+    z-index: 1;
 }
-#c1{
+.card{
+    transform-style: preserve-3d;
     position: relative;
 }
-#b1{
+
+
+.b1{
     position: absolute;
     height: 100%;
     width: 100%;
     background:linear-gradient(to right , rgb(255, 180, 225) 0%, rgb(140,220, 255) 100%);
     border-radius: 15px;
-    z-index: 0;
+    z-index: 1;
     clip-path: polygon(0% 85%,100% 15%  ,100% 100% ,0% 100%);
     filter: saturate(3);
 }
-#h1{
-    z-index: 1;
+.h1{
+    z-index: 2;
 }
